@@ -51,12 +51,12 @@ class Bot(TelegramObject):
         self.token = self._validate_token(token)
 
         if not base_url:
-            self.base_url = 'https://api.telegram.org/bot{0}'.format(self.token)
+            self.base_url = 'https://api.pwrtelegram.xyz/bot{0}'.format(self.token)
         else:
             self.base_url = base_url + self.token
 
         if not base_file_url:
-            self.base_file_url = 'https://api.telegram.org/file/bot{0}'.format(self.token)
+            self.base_file_url = 'https://storage.pwrtelegram.xyz/'
         else:
             self.base_file_url = base_file_url + self.token
 
